@@ -2,7 +2,7 @@
 
 ![Contest Date: 02.12.2022](https://img.shields.io/badge/Contest%20Date-02.12.2022-lightgrey.svg)
 ![Solve Moment: During The Contest](https://img.shields.io/badge/Solve%20Moment-During%20The%20Contest-brightgreen.svg)
-![Difficulty: Easy]https://img.shields.io/badge/Difficulty-Easy-brightgreen
+![Difficulty: Easy](https://img.shields.io/badge/Difficulty-Easy-brightgreen)
 
 ## Description
 
