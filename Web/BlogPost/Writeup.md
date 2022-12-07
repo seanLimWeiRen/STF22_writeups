@@ -16,7 +16,7 @@
 
 ## Summary
 
-Lorem ipsum
+We use XSS to steal the admin's cookies
 
 ## Flag
 
