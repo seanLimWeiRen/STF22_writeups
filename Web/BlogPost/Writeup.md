@@ -34,6 +34,31 @@ After registering an account and logging in with it, we can see that an admin ha
 
 ![2.png](images/2.png)
 
+### Finding the vulnerability
+
+I tried to login to the admin account with SQL injection, but it did not work
+
+![3.png](images/3.png)
+
+Read more about SQL injection ![here](https://portswigger.net/support/using-sql-injection-to-bypass-authentication)
+
+Luckily, one of the first things that I thought to test was XSS, so I used `<script>alert('xss')</script>` to test if it was vulnerable.
+
+![4.png](images/4.png)
+
+Indeed, the alert box popped up to show that the blog was vulnerable to XSS
+
+![5.png](images/5.png)
+
+#### How does XSS work? (simplified)
+
+XSS works by manipulating a website to return possibly malicious javascript code to its users, and it is run on the web browsers of the victim(s).
+Using the example from earlier, the `<script>` and `</script>` tags are used to embed a client-side script, while `alert('xss')` simply gives us a popup with the text "xss"
+
+### Exploiting the vulnerability
+
+Remember when I mentioned that we could try to gain access to the admin account? That's exactly what we need to do with XSS.
+
 ```
 STF22{s1mpl3_p0st_xSs_:)}
 ```
