@@ -70,6 +70,12 @@ Don't worry if you don't know what this means, I'll break it down.
 
 #### How does this work?
 
+When a user views the blog, they will be forcefully redirected to `https://webhook.site/55b56003-41e1-481d-8865-4e5463f746d4`, with their session cookie being sent along as well. The website then logs it and we can view it.
+
+![6.png](6.png)
+
+Now, when we create the post, 
+
 ```
 STF22{s1mpl3_p0st_xSs_:)}
 ```
