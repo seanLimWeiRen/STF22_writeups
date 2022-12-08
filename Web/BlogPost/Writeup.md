@@ -50,7 +50,7 @@ Indeed, the alert box popped up to show that the blog was vulnerable to XSS
 
 ![5.png](images/5.png)
 
-#### How does XSS work? (simplified)
+#### How does XSS work? (for beginners)
 
 XSS works by manipulating a website to return possibly malicious javascript code to its users, and it is run on the web browsers of the victim(s).
 Using the example from earlier, the `<script>` and `</script>` tags are used to embed a client-side script, while `alert('xss')` simply gives us a popup with the text "xss"
@@ -58,6 +58,9 @@ Using the example from earlier, the `<script>` and `</script>` tags are used to 
 ### Exploiting the vulnerability
 
 Remember when I mentioned that we could try to gain access to the admin account? That's exactly what we need to do with XSS.
+Because your session data is stored in your cookies, we need to exfiltrate the session cookie.
+
+For this, we can either use ![webhook.site](https://webhook.site) or ![PostBin](https://www.toptal.com/developers/postbin/)
 
 ```
 STF22{s1mpl3_p0st_xSs_:)}
