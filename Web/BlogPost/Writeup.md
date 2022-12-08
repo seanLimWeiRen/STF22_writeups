@@ -51,7 +51,7 @@ Indeed, the alert box popped up to show that the blog was vulnerable to XSS
 ![5.png](images/5.png)
 
 #### How does XSS work? (for beginners)
-
+XSS stands for Cross Site Scripting, even though "Cross" does not start with an 'X'.
 XSS works by manipulating a website to return possibly malicious javascript code to its users, and it is run on the web browsers of the victim(s).
 Using the example from earlier, the `<script>` and `</script>` tags are used to embed a client-side script, while `alert('xss')` simply gives us a popup with the text "xss"
 
