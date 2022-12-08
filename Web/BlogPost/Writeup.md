@@ -16,7 +16,7 @@
 
 ## Summary
 
-We use XSS to steal the admin's cookies
+We use XSS to steal the admin's session cookies
 
 ## Flag
 
