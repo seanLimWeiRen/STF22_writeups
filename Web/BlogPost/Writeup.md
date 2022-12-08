@@ -72,9 +72,19 @@ Don't worry if you don't know what this means, I'll break it down.
 
 When a user views the blog, they will be forcefully redirected to `https://webhook.site/55b56003-41e1-481d-8865-4e5463f746d4`, with their session cookie being sent along as well. The website then logs it and we can view it.
 
+#### The fun part
+
 ![6.png](images/6.png)
 
-Now, when we create the post, 
+
+Now, when we create the post and go to the webhook.site website, we can see that there are 2 GET requests 
+
+![7.png](images/7.png)
+
+One is from our browser, and the other is from the bot/admin
+When we look at the query strings from the bot, we can get our flag.
+
+![8.png](images/8.png)
 
 ```
 STF22{s1mpl3_p0st_xSs_:)}
