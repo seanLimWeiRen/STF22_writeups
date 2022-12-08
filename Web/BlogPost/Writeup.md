@@ -26,7 +26,7 @@ STF22{s1mpl3_p0st_xSs_:)}
 
 ## Detailed Solution
 
-Upon visiting the website and clicking one "Login", we are greeted with a login page which gives us a link to register an account.
+Upon visiting the website and clicking the login button, we are greeted with a login page which gives us a link to register an account.
 
 ![1.png](images/1.png)
 
@@ -70,7 +70,7 @@ Don't worry if you don't know what this means, I'll break it down.
 
 #### How does this work?
 
-When a user views the blog, they will be forcefully redirected to `https://webhook.site/55b56003-41e1-481d-8865-4e5463f746d4`, with their session cookie being sent along as well. The website then logs it and we can view it.
+When a user views the blog, they will be forcefully redirected to `https://webhook.site/55b56003-41e1-481d-8865-4e5463f746d4`, with their session cookie being sent along as a query string as well. The website then logs it and we can view it.
 
 #### The fun part
 
